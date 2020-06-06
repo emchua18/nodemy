@@ -1,0 +1,32 @@
+body {margin:25px;}
+
+div.polaroid {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 3vw;
+  }
+  
+.bottomleft {
+    position: absolute;
+    bottom: 18px;
+    left: 10px;
+    background-color: sandybrown;
+  }
+
+p {
+    display: inline;
+  }
+
+img { 
+    max-width: 100%;
+    height: auto;
+    /*opacity: 0.3;*/
+  }

@@ -1,0 +1,61 @@
+body {margin:25px;}
+
+div.polaroid {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    padding: 10px 10px;
+    overflow: auto;
+  }
+  
+.topleft {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 5px;
+    background-color: darkred;
+    font: bold 1vw sans-serif;
+    color: white;
+  }
+.topright {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 5px;
+    background-color: darkseagreen;
+    font: bold 1vw sans-serif;
+    color: white;
+  }
+
+p {
+    display: inline;
+    color: black;
+    font-size: 2vw;
+  }
+
+p#price {
+   position: absolute;
+   left: 10px;
+   color: red;
+   text-decoration: line-through;
+   font-size: 1vw;
+}
+
+p#offprice {
+  float: left;
+  color: red;
+  font-size: 1vw;
+}
+
+img { 
+    max-width: 100%;
+    height: auto;
+    padding-top: 30px;
+    /*opacity: 0.3;*/
+  }

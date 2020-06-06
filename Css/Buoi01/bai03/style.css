@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #a9d863;
+  width: 25%;
+}
+
+/* Navigation links */
+.navbar a {
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: solid 1px #78b43d;
+}
+i {
+  color: white;
+}
+/* The subnavigation menu */
+/* Subnav button */
+.subnav .subnavbtn {
+  display: block;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  border-bottom: solid 1px #78b43d;
+}
+/* Add a background color to navigation links on hover */
+.navbar a:hover, 
+.subnav:hover .subnavbtn {
+  background-color: #78b43d;
+  color: white;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  background-color: #78b43d;
+  width: 25%;
+  z-index: 1;
+  
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  border-bottom: solid 1px #a9d863;
+}
+
+/* Add a grey color on hover */
+.subnav-content a:hover {
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+  position: absolute;
+  left: 25.3%;
+  transform: translateY(-47px);
+ 
+}
+.subnav-content a:active {
+  color: #bbff00;
+}
+.navbar a:active {
+  color: #bbff00;
+}

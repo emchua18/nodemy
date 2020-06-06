@@ -1,0 +1,68 @@
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+.container {
+  position: relative;s
+  text-align: left;
+  font-size: 2vw;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  background-color: sandybrown;
+}
+
+div.desc {
+  padding-left: 15px;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+div .price {
+  padding-left: 15px;
+  text-align: left;
+  color: red;
+  font-size: 2vw;
+  text-decoration: solid;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

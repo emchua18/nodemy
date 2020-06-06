@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bai Tap 05</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Họ Tên:</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Họ Tên của bạn.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Mật Khẩu:</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="password"
+              id="pword"
+              name="password"
+              placeholder="Mật khẩu của bạn.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="city">Thành Phố</label>
+          </div>
+          <div class="col-75">
+            <select id="city" name="city">
+              <option value="hn">Hà Nội</option>
+              <option value="hcm">Hồ Chí Minh</option>
+              <option value="dn">Đà Nẵng</option>
+              <option value="other">Khác...</option>
+            </select>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="gender">Giới Tính:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                checked
+              />
+              <label for="male">Nam</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Nữ</label>
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Khác</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="program">Ngôn Ngữ:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="checkbox"
+                id="Checkboxjava"
+                name="checkjava"
+                value="cjava"
+                checked
+              />
+              <label for="male">JAVA</label>
+              <input
+                type="checkbox"
+                id="Checkboxnodejs"
+                name="checknodejs"
+                value="cjava"
+              />
+              <label for="male">NODEJS</label>
+              <input
+                type="checkbox"
+                id="Checkboxphp"
+                name="checkphp"
+                value="cjava"
+              />
+              <label for="male">PHP</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Avartar</label>
+          </div>
+          <div class="col-75">
+            <input type="file" id="myfile" name="myfile" multiple>
+          </div>
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
