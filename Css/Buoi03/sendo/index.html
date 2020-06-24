@@ -14,7 +14,8 @@
     <div class="row">
       <div class="col-md-12" style="background-color:#bc000b;">
         <button type="button" class="btn btn-link text-decoration-none"><img src="images/download.svg" alt="" width="28" height="28"> Tải ứng dụng</button> 
-        <button type="button" class="btn btn-link text-decoration-none"> Chăm sóc khách hàng</button> 
+        <button type="button" class="btn btn-link text-decoration-none"> Tải ứng dụng</button> 
+        <button type="button" class="btn btn-link text-decoration-none">Chăm sóc khách hàng</button> 
         <button type="button" class="btn btn-link text-decoration-none"> Kiểm tra đơn hàng</button> 
         <button type="button" class="btn btn-link text-decoration-none float-right"><img src="images/login.svg" alt="" width="28" height="28">  Đăng nhập</button> 
       </div>
@@ -22,18 +23,25 @@
   </div>
   <div class="container-fluid">
        <div class="row ">
-          <div class="col-md-4 d-flex align-content-end" style="background-color:#e5101d;">
+          <div class="d-flex align-content-end" style="background-color:#e5101d;">
             <button type="button" class="btn"><img src="images/sendo.svg" alt=""></button> 
-            <button type="button" class="btn"><img src="images/items.svg" width="50" height="50"alt=""></button> 
+            <button type="button" class="btn"><img src="images/menu1.svg" alt="" width="28" height="28"></button> 
             
           </div>
         
-          <div class="col-md-8 d-flex align-content-end" style="background-color:#e5101d;">
+          <div class="d-flex align-content-end" style="background-color:#e5101d;">
                                                                  
-            <div class="d-flex justify-content-end align-content-end">
-              <input type="text" placjustify-content-endholder="Tìm kiếm trên Sendo" aria-label="Search">
-              <button><img src="images/search.svg" alt="">Tìm kiếm</button>
-              <a href="#"><img src="images/cart.svg" alt=""></a>
+            <form class="form-inline d-flex justify-content-end" action="#">
+              <div class="form-group row">
+                <div class="col-lg-10">
+                <label class="sr-only" for="email">Search:</label>
+                <input type="text" class="form-control" id="text" placeholder="Tìm kiếm trên Sendo"  name="search">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-default bg-warning text-white"><img src="images/search.svg" alt="" height="20">Tìm kiếm</button>
+            </form>
+            <button type="button" class="btn"><img src="images/shopping-cart.svg" alt="" width="28" height="28"></button> 
+
             </div>
            </div>
         </div>
@@ -53,7 +61,7 @@
           <!-- The slideshow -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/1.png" alt="Los Angeles" >
+              <img src="images/1.png" alt="Los Angeles" width="100%" >
             </div>
             <div class="carousel-item">
               <img src="images/2.png" alt="Chicago" >
@@ -171,5 +179,204 @@
        </div>
     
       </div> -->
+     <!--hop tim kiem-->
+
+     <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Your Email">
+      <div class="input-group-append">
+        <span class="input-group-text"><img src="images/search.svg" alt=" "height="22"> Tìm kiếm</span>
+      </div>
+    </div>
+
+     <form>
+      <div class="col-lg-10 mb-3">
+        <div class="input-group">
+          <input type="text" class="form-control rounded-0" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+          <div class="input-group-prepend">
+            <input type="submit" value="submit" class="btn btn-primary btn-sm rounded-0" id="inputGroupPrepend2">
+          </div>
+        </div>
+      </div>
+    </form>
+
+<div class="container d-flex">
+     <div class="flex-grow-1">
+     <div class="form-group w-75">
+      <form>
+        <div class="input-group input-group-sm">
+          <input type="text" class="form-control" placeholder="Tìm kiếm trên Sendo">
+          <div class="input-group-btn input-group-prepend1">
+            <input type="submit" value="Tìm kiếm" class="btn btn-primary btn-sm rounded-0" id="inputGroupPrepend2">
+
+<!--        <button type="button" class="btn btn-warning btn-sm rounded-0" >
+              <img src="images/search.svg" alt=" "height="20"> Tìm kiếm
+            </button>-->
+
+          </div>
+        </div>
+      </form> 
+    </div>
+    </div>
+
+   <div class="ml-auto">
+    <button type="button" class="btn"><img src="images/shopping-cart.svg" alt="" width="28" height="28"></button>
+   </div>
+
+  </div>
+<!----->
+
+      <div class="container my-4">
+
+        <p class="font-weight-bold">To change the width of the inputs use bootstrap sizing utilities or bootstrap grid
+          system.</p>
+    
+        <p><strong>Detailed documentation and more examples of Bootstrap inputs width you can find in our <a href="https://mdbootstrap.com/docs/jquery/forms/inputs/"
+              target="_blank">Bootstrap Inputs Docs</a> and <a href="https://mdbootstrap.com/docs/jquery/utilities/sizing/"
+              target="_blank">Bootstrap Sizing Docs</a>.</p>
+    
+        <hr class="my-4">
+    
+        <h2 class="my-5 h2">Using sizing utilities</h2>
+    
+        <p>Example: To change the width of the inputs to 50% add <code>.w-50</code> class to the <code>.form-group</code>
+          element.</p>
+    
+        <p><strong>Note: </strong>The red borders mark parent element of the inputs.</p>
+    
+        <div class="border border-danger p-4">
+    
+          <div class="form-group w-25">
+            <label for="example1">Input with class .w-25</label>
+            <input type="text" class="form-control" id="example1" placeholder="25% width of the parent">
+          </div>
+    
+          <div class="form-group w-50">
+            <label for="example2">Input with class .w-50</label>
+            <input type="text" class="form-control" id="example2" placeholder="50% width of the parent">
+          </div>
+    
+          <div class="form-group w-75">
+            <label for="example3">Input with class .w-75</label>
+            <input type="text" class="form-control" id="example3" placeholder="75% width of the parent">
+          </div>
+    
+          <div class="form-group">
+            <label for="example4">Input without sizing class</label>
+            <input type="text" class="form-control" id="example4" placeholder="100% width of the parent">
+          </div>
+    
+        </div>
+    
+        <h4 class="my-5 h4">Material Inputs</h4>
+    
+        <div class="border border-danger p-4">
+    
+          <div class="md-form form-group w-25">
+            <label for="example5">Input with class .w-25</label>
+            <input type="text" class="form-control" id="example5" placeholder="25% width of the parent">
+          </div>
+    
+          <div class="md-form form-group w-50">
+            <label for="example6">Input with class .w-50</label>
+            <input type="text" class="form-control" id="example6" placeholder="50% width of the parent">
+          </div>
+    
+          <div class="md-form form-group w-75">
+            <label for="example7">Input with class .w-75</label>
+            <input type="text" class="form-control" id="example7" placeholder="75% width of the parent">
+          </div>
+    
+          <div class="md-form form-group">
+            <label for="example8">Input without sizing class</label>
+            <input type="text" class="form-control" id="example8" placeholder="100% width of the parent">
+          </div>
+    
+        </div>
+    
+        <h2 class="my-5 h2">Using grid</h2>
+    
+        <p>You can always place your inputs within grid columns and rows.</p>
+    
+        <!-- Extended material form grid -->
+        <form>
+          <!-- Grid row -->
+          <div class="form-row">
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <!-- Material input -->
+              <div class="md-form form-group">
+                <input type="email" class="form-control" id="inputEmail4MD" placeholder="Email">
+                <label for="inputEmail4MD">Email</label>
+              </div>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <!-- Material input -->
+              <div class="md-form form-group">
+                <input type="password" class="form-control" id="inputPassword4MD" placeholder="Password">
+                <label for="inputPassword4MD">Password</label>
+              </div>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+    
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-12">
+              <!-- Material input -->
+              <div class="md-form form-group">
+                <input type="text" class="form-control" id="inputAddressMD" placeholder="1234 Main St">
+                <label for="inputAddressMD">Address</label>
+              </div>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-12">
+              <!-- Material input -->
+              <div class="md-form form-group">
+                <input type="text" class="form-control" id="inputAddress2MD" placeholder="Apartment, studio, or floor">
+                <label for="inputAddress2MD">Address 2</label>
+              </div>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+    
+          <!-- Grid row -->
+          <div class="form-row">
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <!-- Material input -->
+              <div class="md-form form-group">
+                <input type="text" class="form-control" id="inputCityMD" placeholder="New York City">
+                <label for="inputCityMD">City</label>
+              </div>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <!-- Material input -->
+              <div class="md-form form-group">
+                <input type="text" class="form-control" id="inputZipMD" placeholder="11206-1117">
+                <label for="inputZipMD">Zip</label>
+              </div>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+          <button type="submit" class="btn btn-primary btn-md">Sign in</button>
+        </form>
+        <!-- Extended material form grid -->
+    
+      </div>
+
+
+
 </body>
 </html>

@@ -78,3 +78,26 @@ i {
   color: #bbff00;
 }
  
+
+
+/*--------------*/
+.input-group-prepend {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-group-prepend1 {
+  position: absolute;
+  right: 0px;
+  
+}
+
+#inputGroupPrepend2 {
+  background-image: url("images/search.svg");
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-size: 25 25;
+  background-position:left;
+}
